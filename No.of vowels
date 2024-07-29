@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        String s1 = s.nextLine();
+        int s2 = 0;
+        for(int i =0;i<s1.length();i++ )
+        {
+            char ch = s1.charAt(i);
+            if(ch == 'a' || ch == 'A' || ch == 'e' || ch == 'E'|| ch == 'i' || ch == 'I' || ch == 'o' || ch == 'O' || ch == 'u' || ch == 'U' )
+            {
+                s2++;
+            }
+            
+        }
+        System.out.println("Vowel Voyage Completed! Number of vowels: "+s2);
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
